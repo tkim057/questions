@@ -1,9 +1,9 @@
 #include <vector>
+#include <cmath>
 static int largest(std::vector<int> &v)
 {
-	(void)v;
 	
-	 int sortarr[v.size()];
+int sortarr[v.size()];
    int leng[v.size()];
    int big = 0;
    
