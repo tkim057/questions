@@ -1,18 +1,12 @@
 static int twos(int n){
-        int count=0;
-        for(int i = 1; i <= n; i++){
-            if((i % 10)==2){
-               count++;
-            }
-            if(i-(i%10)==20){
-               count++;
-            }
-            if(i/10-(i%10)==20){
-               count++;
-            }
-            if(i/100-(i%100)==20){
-               count++;
-            }
-       }
-	return count;
+    int count=0;
+    string check = to_string(n);
+    for(int i = 1; i <= n; i++){
+        for(int j = 0; j < to_string(i).length(); j++ ){
+        	if ((to_string(i)).at(j) == 2){
+        		count++;
+        	}
+        }
+    }
+   	return count;
 }
