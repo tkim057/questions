@@ -10,7 +10,7 @@ static int twos(int n){
             if(i/10-(i%10)==20){
                count++;
             }
-            if(i/10-(i%10)==20){
+            if(i/100-(i%100)==20){
                count++;
             }
        }
