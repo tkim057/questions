@@ -14,6 +14,5 @@ static int twos(int n){
                count++;
             }
        }
-       cout << count << endl;
-	return 0;
+	return count;
 }
